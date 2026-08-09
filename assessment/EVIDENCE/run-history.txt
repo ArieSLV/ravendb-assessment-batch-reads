@@ -1,0 +1,17 @@
+One line per capture, oldest first. The point of this file is the variation:
+the failing account, the exception and the time to failure differ on every run.
+
+2026-08-09 08:00:39Z  exit=1  rounds=3197 accountsChecked=12784 elapsed=0.7s cacheItems=0
+                        after 0.6s / 3197 rounds / 12724 account reads: the batch over [accounts/114, accounts/125, accounts/35, accounts/41] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Boolean, OffsetSizeShort, PropertyIdMask')
+2026-08-09 08:00:49Z  exit=1  rounds=13935 accountsChecked=55736 elapsed=2.1s cacheItems=0
+                        after 2.0s / 13935 rounds / 55688 account reads: the batch over [accounts/76, accounts/46, accounts/197, accounts/60] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Boolean, OffsetSizeShort, PropertyIdMask')
+2026-08-09 08:02:06Z  exit=1  rounds=593176 accountsChecked=2372703 elapsed=68.3s cacheItems=0
+                        after 68.3s / 593176 rounds / 2372642 account reads: accounts/52 came back <missing>, but the seed wrote it and nothing deletes accounts
+2026-08-09 08:02:15Z  exit=1  rounds=2337 accountsChecked=9344 elapsed=0.4s cacheItems=0
+                        after 0.4s / 2337 rounds / 9292 account reads: the batch over [accounts/87, accounts/195, accounts/82, accounts/154] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Boolean, OffsetSizeShort, PropertyIdMask')
+2026-08-09 08:02:23Z  exit=1  rounds=2376 accountsChecked=9500 elapsed=0.4s cacheItems=0
+                        after 0.4s / 2376 rounds / 9448 account reads: the batch over [accounts/9, accounts/111, accounts/141, accounts/71] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of StartArray, PositionMask, PropertyIdSizeByte')
+2026-08-09 08:02:40Z  exit=1  rounds=56009 accountsChecked=224035 elapsed=8.6s cacheItems=0
+                        after 8.6s / 56009 rounds / 223990 account reads: accounts/110 came back <missing>, but the seed wrote it and nothing deletes accounts
+2026-08-09 08:03:03Z  exit=1  rounds=2887 accountsChecked=11540 elapsed=0.9s cacheItems=0
+                        after 0.8s / 2887 rounds / 11496 account reads: the batch over [accounts/150, accounts/104, accounts/120, accounts/168] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Reserved5')

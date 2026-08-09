@@ -1,0 +1,7 @@
+2026-08-09 08:03:02.245Z  job start      | target=http://127.0.0.1:8080 database=reconciliation workers=16 budget=5m
+2026-08-09 08:03:02.366Z  seed           | 200 accounts written, accounts/0 .. accounts/199
+2026-08-09 08:03:02.461Z  warm           | account book read once under aggressive cache, requests=1, cacheItems=200
+2026-08-09 08:03:02.462Z  pass start     | each round asks for tonight's settlement record and then re-reads 4 accounts in one lazy batch
+2026-08-09 08:03:03.310Z  anomaly        | after 0.8s / 2887 rounds / 11496 account reads: the batch over [accounts/150, accounts/104, accounts/120, accounts/168] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Reserved5')
+2026-08-09 08:03:03.367Z  anomaly        | after 0.9s / 2887 rounds / 11540 account reads: the batch over [accounts/5, accounts/109, accounts/158, accounts/68] threw System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Property names offset flag should be either byte, short of int, instead of Boolean, OffsetSizeShort, PropertyIdMask')
+2026-08-09 08:03:03.498Z  job end        | exit=1 rounds=2887 accountsChecked=11540 elapsed=0.9s cacheItems=0

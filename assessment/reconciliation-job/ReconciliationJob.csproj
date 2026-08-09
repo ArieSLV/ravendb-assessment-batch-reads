@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>ReconciliationJob</RootNamespace>
+    <AssemblyName>ReconciliationJob</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <!--
+    The job is built against the client in this tree rather than a published package, so that a
+    change to Raven.Client is picked up by the next run.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Raven.Client\Raven.Client.csproj" />
+    <ProjectReference Include="..\..\src\Sparrow\Sparrow.csproj" />
+  </ItemGroup>
+
+</Project>
